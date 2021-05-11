@@ -2,6 +2,7 @@ package perimeter
 
 import "math"
 
+// strcture
 type Rectangle struct {
 	width  float64
 	height float64
@@ -16,6 +17,7 @@ type Triangle struct {
 	Height float64
 }
 
+// interface
 type Shape interface {
 	Area() float64
 }
@@ -24,6 +26,7 @@ func Perimeter(r Rectangle) float64 {
 	return 2 * (r.width + r.height)
 }
 
+// methods
 func (r Rectangle) Area() float64 {
 	return (r.width * r.height)
 }
