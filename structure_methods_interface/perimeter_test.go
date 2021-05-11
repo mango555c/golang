@@ -4,6 +4,7 @@ import "testing"
 
 func TestArea(t *testing.T) {
 
+	//anonymous struct with three fields, then assign it to areaTests
 	areaTests := []struct {
 		name    string
 		shape   Shape
